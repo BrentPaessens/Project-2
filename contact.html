@@ -7,25 +7,95 @@
     <meta name="author" content="Brent Paessens">
     <title>Contact</title>
     <link rel="icon" href="/IMG/favicon.ico" type="image/x-icon" sizes="16x16">
-
     <style>
         html {
-            min-height: 100%; 
+          min-height: 100%;
         }
         body {
-            background: -webkit-linear-gradient(#74b5b8, #b9dbdc); 
-            background: -o-linear-gradient(#74b5b8, #b9dbdc); 
-            background: -moz-linear-gradient(#74b5b8, #b9dbdc); 
-            background: linear-gradient(#74b5b8, #b9dbdc); 
-            background-color: #74b5b8; 
-            background: linear-gradient(#74b5b8 55%, #b9dbdc 75%, #000000 95%);
+          background: -webkit-linear-gradient(#74b5b8, #b9dbdc);
+          background: -o-linear-gradient(#74b5b8, #b9dbdc);
+          background: -moz-linear-gradient(#74b5b8, #b9dbdc);
+          background: linear-gradient(#74b5b8, #b9dbdc);
+          background-color: #74b5b8;
+          background: linear-gradient(#74b5b8 40%, #b9dbdc 80%, #000000 108%);
         }
-        
-    </style>
+      </style>
+    <link rel="stylesheet  " href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Default.css" />
+
 </head>
 <body>
 
-    <h1>stel uw vraag hier:</h1>
+    
+    <nav class="navbar navbar-expand-sm bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="CV.html"
+                  >CV</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="hobby's.html"
+                  >Hobby</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    
+    <section class="container my-3">
+      <h2>Vragen?</h2>
+      <form>
+          <div class="row">
+              <div class="col-md">
+                  <div class="mb-3">
+                      <label for="Voornaam" class="form-label">Voornaam</label>
+                      <input type="text" class="form-control" name="name" id="name">
+                  </div>
+              </div>
+              <div class="col-md">
+                  <div class="mb-3">
+                      <label for="familienaam" class="form-label">Familienaam</label>
+                      <input type="text" class="form-control" id="familienaam" name="familienaam">
+                  </div>
+              </div>
+          </div>
+          <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </section>
+
+
+
     <form action="https://stadwebpaessens.be/Sendmail.php" method="post">
         <div>
             <label for="name"
@@ -58,23 +128,11 @@
             <a href="mailto: info@stadwebpaessens.be">info@stadwebpaessens.be</a>
         </p>
 
-    <hr color="Black">
-    <h3>
-        Hieronder kan je navigeren naar het gewenste pagina.
-    </h3>
-
-    <hr color="Black">
-    <p>
-        <a href="Ervaringen.html">Ervaringen</a>
-    </p>
-    <p>
-        <a href="CV.html">CV</a>
-    </p>
-    <p>
-        <a href="hobby's.html">hobby's</a>
-    </p>
-    <p>
-        <a href="index.html">Home</a>
-    </p>
+   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>

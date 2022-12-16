@@ -1,0 +1,15 @@
+
+:root{
+    --color-primary:  deepskyblue;
+    --color-test: rgb(90, 90, 90);
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+    background-color: var(--color-primary);
+}
+
+.btn-info1{
+    background-color: var(--color-test);
+}
+

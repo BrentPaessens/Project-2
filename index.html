@@ -12,73 +12,142 @@
       type="image/x-icon"
       sizes="16x16"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
+    <style>
+      html {
+        min-height: 100%;
+      }
+      body {
+        background: -webkit-linear-gradient(#74b5b8, #b9dbdc);
+        background: -o-linear-gradient(#74b5b8, #b9dbdc);
+        background: -moz-linear-gradient(#65b3b7, #b9dbdc);
+        background: linear-gradient(#65acb0, #b9dbdc);
+        background-color: #57abaf;
+        background: linear-gradient(#74b5b8 30%, #b9dbdc 60%, #000000 100%);
+      }
+    </style>
+
+    <link rel="stylesheet  " href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Default.css" />
   </head>
 
   <body>
-    <h1>Startpagina</h1>
+    <main>
+      <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <svg xmlns="" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+            <span class="fs-4">Portfolio</span>
+          </a>
+        </header>
+    
+        <div class="p-5 mb-4 bg-light rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Welkom</h1>
+            <p class="col-md-8 fs-4">Dit is mijn portfolio, waarin alles vermeld staat wat ik in het verleden tot nu heb gedaan in school, als stage en als vakantiewerk.</p>
+            
+            <div>
+              <nav class="navbar navbar-dark bg-dark rounded-3">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Home</a>
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="CV.html"
+                          >CV</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="hobby's.html"
+                          >Hobby</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html"
+                          >Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav
+            </div>
+          </div>
+        </div>
+            
+    
+        <div class="row align-items-md-stretch px-5">
+          <div class="card text-bg-dark mb-1 mx-5" style="max-width: 27rem;">
+            <div class="card-header"></div>
+            <a href="hobby's.html"><img  src="img/mountainbike.jpg" class="card-img-top"></a>
+            <div class="card-body">
+              <h5 class="card-title">Hobby's</h5>
+              <p class="card-text">Hier vindt u mijn interesses en hobby's terug.</p>
+            </div>
+          </div>
+          <div class="card text-bg-dark mb-1 mx-5" style="max-width: 27rem;">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <h5 class="card-title">CV</h5>
+              <p class="card-text"><a href="CV.html">Hier vindt u mijn CV terug</a></p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="accordion my-3" id="accordionExample">
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button bg-dark text-bg-dark" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Wat kan ik goed?
+                  </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ol>
+                      <li><font face="Arial">KNX programmeren</font></li>
+                      <li><font face="Arial">PowerPoint presentaties geven</font></li>
+                      <li><font face="Arial">Alles plannen en opvolgen</font></li>
+                      <li><font face="Arial">Andere vooruit helpen</font></li>
+                    </ol>
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed bg-dark text-bg-dark" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Wat kan ik minder goed?
+                  </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ol>
+                      <li><font face="Arial">Sociaal zijn</font></li>
+                      <li><font face="Arial">Stapsgewijs werken</font></li>
+                      <li><font face="Arial">Alles onthouden</font></li>
+                    </ol>   
+                  </div>
+              </div>
+          </div>
+      </div>
 
-    <hr color="black" />
-    <h2>korte inhoud over mezelf</h2>
-
-    <img src="IMG/profielfoto.png" alt="profielfoto" width="25%" />
-
-    <b>
-      <p>Wie ben ik?</p>
-    </b>
-
-    <font face="Arial">
-      Ik ben Brent Paessens, ik ben 20 jaar. Ik ben een gemotiveerde en
-      positieve persoon. Ik leer graag bij om verder te kunnen ontwikkelen en te
-      verbeteren.
-    </font>
-
-    <b>
-      <p>Wat kan ik goed?</p>
-    </b>
-
-    <ol>
-      <li><font face="Arial">KNX programmeren</font></li>
-      <li><font face="Arial">PowerPoint presentaties geven</font></li>
-      <li><font face="Arial">Alles plannen en opvolgen</font></li>
-      <li><font face="Arial">Andere vooruit helpen</font></li>
-    </ol>
-
-    <b>
-      <p>Wat kan ik minder goed?</p>
-    </b>
-
-    <ol>
-      <li><font face="Arial">Sociaal zijn</font></li>
-      <li><font face="Arial">Stapsgewijs werken</font></li>
-      <li><font face="Arial">Alles onthouden</font></li>
-    </ol>
-
-    <hr color="black" />
-    <h3>Hieronder kan je navigeren naar het gewenste pagina.</h3>
-
-    <hr color="black" />
-    <p>
-      <a href="Ervaringen.html">Ervaringen</a>
-    </p>
-    <p>
-      <a href="CV.html">CV</a>
-    </p>
-    <p>
-      <a href="hobby's.html">hobby's</a>
-    </p>
-    <p>
-      <a href="contact.html">contact</a>
-    </p>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+        <footer class="pt-3 mt-4 text-muted border-top">
+          &copy; 2022 - Brent
+        </footer>
+      </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
