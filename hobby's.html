@@ -29,226 +29,126 @@
     <link rel="stylesheet" href="css/Default.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm bg-info">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Home</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="CV.html"
-                >CV</a
+
+    <main>
+      <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <span class="fs-4">Hobby's</span>
+          </a>
+        </header>
+        <div>
+          <nav class="navbar navbar-dark bg-dark rounded-3">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
               >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="Ervaringen.html"
-                >Ervaringen</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contact.html"
-                >Contact</a
-              >
-            </li>
-          </ul>
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="CV.html"
+                      >CV</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="hobby's.html"
+                      >Hobby</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html"
+                      >Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
-    </nav>
   
-    <p class="text-center display-2" style="margin-bottom: 30px">Hobby's</p>
-
-
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="15000">
+            <img src="img/mountainbike.jpg" class="d-block w-100 p-5" alt="mountainbike">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mountain bike</h5>
+              <p>Omdat ik in de bossen wil rijden, de natuur wil bezichtigen en eens hoge
+                snelheden halen en plezier te hebben.</p>
+            </div>
           </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/Controllers.jpg" class="d-block w-100 p-5" alt="ps4 Controllers">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Gamen</h5>
+              <p>Omdat ik een soort coach ben in online games om andere speler te leren
+                om beter te kunnen worden, speel ook educatieve games om altijd bij te
+                leren en op andere manieren te denken en problemen op te lossen.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/elektronica.png" class="d-block w-100 p-5" alt="printplaat">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>reparatie elektronica</h5>
+              <p>Omdat ik graag wil leren hoe alles werkt en daaruit kapotte elektronica
+                een nieuw leven geven zodat dit hergebruikt kan worden, waardoor we
+                grondstoffen kunnen uit besparen.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/knx.jfif" class="d-block w-100 p-5" alt="KNX">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>KNX programmeren</h5>
+              <p>Omdat ik elektriciteit heb gestudeerd in het middelbaar en dat alles in de
+                toekomst toch automatische moet gestuurd worden om de kosten te kunnen
+                onderdrukken door hoge elektriciteitskosten en hun dynamische contracten.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/AI.jpg" class="d-block w-100 p-5" alt="AI">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Artificiële intelligentie of AI</h5>
+              <p>Voor Artificiële intelligentie of AI, is het omdat we nu in deze tijden
+                bezig zijn met geavanceerde robots waarbij AI komt kijken om alles zoveel
+                mogelijk te kunnen onthouden. waardoor dit ook een mogelijke toepassing
+                kan zijn op de studie dat ik doe.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/VR.png" class="d-block w-100 p-5" alt="Virtual Reality">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Virtual Reality / VR</h5>
+              <p>Omdat de we in de toekomst meer gebruik gaan maken van 3D platforms om
+                onze ideeën en portotypes te simuleren. en dat begint met de VR.</p>
+            </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
-
-
-
-
-
-    <ol>
-      <b>
-        <li><font face="Arial">Mountain bike</font></li>
-      </b>
-
-      <hr color="black" />
-
-      <b>
-        <p>Waarom?</p>
-      </b>
-      <font face="Arial">
-        Omdat ik in de bossen wil rijden, de natuur wil bezichtigen en eens hoge
-        snelheden halen en plezier te hebben.
-      </font>
-      <p>
-        <img src="IMG/mountainbike.jpg" alt="Mountainbike" width="35%" />
-      </p>
-
-      <hr color="black" />
-
-      <b>
-        <li><font face="Arial">Gamen</font></li>
-      </b>
-
-      <hr color="black" />
-      <b>
-        <p>Waarom?</p>
-      </b>
-      <font face="Arial">
-        Omdat ik een soort coach ben in online games om andere speler te leren
-        om beter te kunnen worden, speel ook educatieve games om altijd bij te
-        leren en op andere manieren te denken en problemen op te lossen.
-      </font>
-
-      <p>
-        <img src="IMG/Controllers.jpg" alt="Controllers" width="35%" />
-      </p>
-
-      <hr color="black" />
-
-      <b>
-        <li><font face="Arial">reparatie elektronica</font></li>
-      </b>
-
-      <hr color="black" />
-      <b>
-        <p>Waarom?</p>
-      </b>
-      <font face="Arial">
-        Omdat ik graag wil leren hoe alles werkt en daaruit kapotte elektronica
-        een nieuw leven geven zodat dit hergebruikt kan worden, waardoor we
-        grondstoffen kunnen uit besparen.
-      </font>
-    </ol>
-
-    <hr color="black" />
-    <h2>Wat zijn mijn interresses?</h2>
-    <b>
-      <p>Mijn interesses zijn:</p>
-    </b>
-
-    <font face="Arial">
-      <ol>
-        <li>
-          <p>KNX programmeren</p>
-        </li>
-        <li>
-          <p>Artificiële intelligentie of AI</p>
-        </li>
-        <li>
-          <p>Machine Learning</p>
-        </li>
-        <li>
-          <p>airco's</p>
-        </li>
-        <li>
-          <p>elektronica in algemeen</p>
-        </li>
-        <li>
-          <p>Virtual reality</p>
-        </li>
-        <li>
-          <p>Muziek</p>
-        </li>
-      </ol>
-    </font>
-
-    <hr color="black" />
-    <b>
-      <p>Welke reden waarom?</p>
-    </b>
-
-    <p>KNX programmeren</p>
-    <font face="Arial">
-      Omdat ik elektriciteit heb gestudeerd in het middelbaar en dat alles in de
-      toekomst toch automatische moet gestuurd worden om de kosten te kunnen
-      onderdrukken door hoge elektriciteitskosten en hun dynamische contracten.
-    </font>
-
-    <hr color="black" />
-    <p>Artificiële intelligentie of AI</p>
-    <font face="Arial">
-      Voor Artificiële intelligentie of AI, is het omdat we nu in deze tijden
-      bezig zijn met geavanceerde robots waarbij AI komt kijken om alles zoveel
-      mogelijk te kunnen onthouden. waardoor dit ook een mogelijke toepassing
-      kan zijn op de studie dat ik doe.
-    </font>
-
-    <hr color="black" />
-    <p>Airco's</p>
-    <font face="Arial">
-      Omdat er veel vraag naar airco's is, dus wil ik dit ook nog erbij pakken
-      net als domotica en elektriciteit.
-    </font>
-
-    <hr color="black" />
-    <p>Elektronica</p>
-    <font face="Arial">
-      Om dit toch een tweede kans te kunnen geven om hergebruikt te worden en
-      hiervoor onderdelen en grondstoffen uit te sparen.
-    </font>
-
-    <hr color="black" />
-    <p>Virtual Reality / VR</p>
-    <font face="Arial">
-      Omdat de we in de toekomst meer gebruik gaan maken van 3D platforms om
-      onze ideeën en portotypes te simuleren. en dat begint met de VR.
-    </font>
-
-    <hr color="black" />
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
